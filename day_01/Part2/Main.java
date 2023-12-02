@@ -8,18 +8,7 @@ public class Main {
 
         while(s.hasNext()){
             String value = convert(s.nextLine());
-            int first = -1;
-            int last = -1;
-            for(int i = 0; i < value.length(); i++){
-                if(Character.isDigit(value.charAt(i))){
-                    if(first == -1){
-                        first = value.charAt(i) - '0';
-                    }
-                    last = value.charAt(i) - '0';
-                }
-            }
-            int combine = first * 10 + last;
-            sum += combine;
+            sum += (value.charAt(0) - '0') * 10 + (value.charAt(value.length()-1) - '0');
         }
         System.out.println(sum);
     }
