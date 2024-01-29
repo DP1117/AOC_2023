@@ -1,4 +1,3 @@
-//package Part2;
 import java.util.*;
 
 public class Main {
